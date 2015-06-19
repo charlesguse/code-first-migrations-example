@@ -49,6 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LocalVariablesModelContext.cs" />
+    <Compile Include="Migrations\201506182301061_Initial.cs" />
+    <Compile Include="Migrations\201506182301061_Initial.Designer.cs">
+      <DependentUpon>201506182301061_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506182306285_AddedTitle.cs" />
+    <Compile Include="Migrations\201506182306285_AddedTitle.Designer.cs">
+      <DependentUpon>201506182306285_AddedTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506182320254_AddedComments.cs" />
+    <Compile Include="Migrations\201506182320254_AddedComments.Designer.cs">
+      <DependentUpon>201506182320254_AddedComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +73,17 @@
       <Project>{0e766141-e8de-47b2-a661-a09a9ba985e9}</Project>
       <Name>LocalVariablesExample.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201506182301061_Initial.resx">
+      <DependentUpon>201506182301061_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506182306285_AddedTitle.resx">
+      <DependentUpon>201506182306285_AddedTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506182320254_AddedComments.resx">
+      <DependentUpon>201506182320254_AddedComments.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
