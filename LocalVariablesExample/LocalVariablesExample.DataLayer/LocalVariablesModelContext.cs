@@ -31,5 +31,6 @@ namespace LocalVariablesExample.DataLayer
         { }
 
         virtual public DbSet<Post> Posts { get; set; }
+        virtual public DbSet<Comment> Comments { get; set; }
     }
 }
